@@ -198,6 +198,13 @@ a {
   .cbg-container {
     display: none;
   }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+  }
 }
 /* Desktop menu */
 @media all and (min-width: 960px) {
@@ -245,9 +252,9 @@ a {
 }
 
 .work-p {
-  font-size: 12px;
+  font-size: 20px;
   color: rgb(128, 128, 128);
-  margin: 0rem 20rem 0rem 6rem;
+  margin: 0rem 22rem 0rem 6rem;
 }
 
 .list-item {
@@ -803,6 +810,11 @@ footer p {
     left: 32%;
   }
 }
+@media all and (max-width: 800px) and (max-width: 899px) {
+  .menu-col-content {
+    gap: 2%;
+  }
+}
 @media all and (max-width: 800px) and (max-width: 700px) {
   .first_container {
     position: relative;
@@ -817,6 +829,25 @@ footer p {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 800px) and (max-width: 650px) {
+  .menu-col-container {
+    width: 90%;
+    height: 6000px;
+  }
+  /* menu-col-content  section */
+  .menu-col-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    width: 100%;
+    height: auto;
+    margin-left: 60px;
+    justify-items: center;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
 @media all and (max-width: 800px) and (max-width: 500px), (max-width: 800px) and (max-width: 650px) {
   body {
     overflow: hidden;
@@ -826,6 +857,7 @@ footer p {
     justify-content: center;
     align-self: center;
     text-align: center;
+    color: #fff;
   }
   .logo-2 {
     display: none;
@@ -870,7 +902,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    font-size: 11px;
+    font-size: 14px;
     gap: 10px;
     margin: 30px 0px 0px;
     color: rgb(128, 128, 128);
@@ -1088,10 +1120,6 @@ footer p {
   }
 }
 @media all and (max-width: 800px) and (max-width: 500px) and (max-width: 480px), (max-width: 800px) and (max-width: 650px) and (max-width: 480px) {
-  body {
-    max-height: 700vh;
-    height: 72%;
-  }
   .work-text {
     padding: 15px 0px 15px;
   }
@@ -1103,10 +1131,10 @@ footer p {
   }
   .list-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    grid-template-rows: 2fr 3fr;
-    font-size: 8px;
+    grid-template-rows: 2fr;
+    font-size: 13px;
     gap: 0px;
     row-gap: 10px;
     margin: 20px;
@@ -1134,7 +1162,7 @@ footer p {
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 32%;
+    left: 20%;
   }
   .cbg-child {
     display: grid;
