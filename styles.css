@@ -382,6 +382,14 @@ img {
   padding: 80px;
 }
 
+.first_container .hr {
+  margin-top: 100px;
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 20px;
+  position: relative;
+}
+
 .holder::-webkit-scrollbar {
   display: none;
 }
@@ -468,7 +476,7 @@ footer p {
 
 .dot-container {
   position: absolute;
-  top: 70%;
+  top: 62%;
   left: 45%;
   text-align: center;
   display: flex;
@@ -998,7 +1006,7 @@ footer p {
 .nextContainer {
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top: 105%;
+    top: 82%;
     transform: translate(0, calc(-50% - 54px));
     height: 54px;
     width: 54px;
