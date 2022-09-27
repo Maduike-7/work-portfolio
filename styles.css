@@ -26,20 +26,10 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --font-style: "Nunito Sans", sans-serif;
-  font-size: 16px;
-  font-family: "Anek Latin", sans-serif;
-  font-family: "Fredoka One", cursive;
-  --text-primary: #ff0000;
-  --tbg-primary: #000000;
-}
-
 body {
   background-color: #222;
   font-family: sans-serif;
   font-size: 16px;
-  height: 4300px;
   scroll-behavior: smooth;
   font-family: var(--font-style);
 }
@@ -84,15 +74,15 @@ a {
 }
 
 .logo-2 p {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .logo-2 span {
   background: #ffffff;
   color: #000000;
-  font-weight: bolder;
+  font-weight: 400;
   padding: 20px 0px 20px 20px;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 
 .logo-2 img {
@@ -288,6 +278,10 @@ a {
   margin-bottom: 80px;
 }
 
+.menu-col-container {
+  min-height: 50vh;
+}
+
 .menu-col-content {
   display: flex;
   margin-left: 95px;
@@ -331,7 +325,7 @@ input {
   margin-top: 60px;
   display: flex;
   position: absolute;
-  left: 12.5%;
+  left: 14%;
 }
 
 .view {
@@ -621,9 +615,6 @@ footer p {
     position: relative;
     top: -1px;
   }
-  input [type=checkbox] {
-    background: transparent;
-  }
   .view-reset {
     display: flex;
     position: absolute;
@@ -772,16 +763,6 @@ footer p {
     margin: 0rem 0rem 0rem 0rem;
     padding: 5px 20px 5px 20px;
   }
-  .menu-col-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr;
-    width: 80vw;
-    margin-left: 45.5px;
-    min-height: 100vh;
-    margin-top: 2rem;
-    justify-items: center;
-  }
   .input-text {
     color: #fff;
     text-transform: capitalize;
@@ -831,7 +812,6 @@ footer p {
 @media all and (max-width: 800px) and (max-width: 500px), (max-width: 800px) and (max-width: 650px) {
   body {
     overflow: hidden;
-    height: 5000vh;
   }
   .logo {
     display: flex;
@@ -873,7 +853,7 @@ footer p {
     text-align: center;
   }
   .work-p {
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(128, 128, 128);
     margin: 0rem 0rem 0rem 0rem;
     padding: 5px 20px 5px 20px;
@@ -892,22 +872,25 @@ footer p {
   .list-item-sec {
     color: #ffffff;
     margin-left: 0px;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: capitalize;
+  }
+  .menu-col-container {
+    width: 100%;
+    height: 700px;
   }
   /* menu-col-content  section */
   .menu-col-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr;
-    width: 80vw;
+    grid-template-rows: 100px;
+    width: 100%;
+    height: auto;
     margin-left: 60px;
-    height: 72%;
-    row-gap: 0;
-    margin-top: 2rem;
-    align-items: center;
     justify-items: center;
     position: relative;
+    margin: 0 auto;
+    align-items: center;
   }
   .input-text {
     color: #fff;
@@ -936,11 +919,10 @@ footer p {
     background: transparent;
   }
   .view-reset {
-    margin-top: 28px;
+    margin-top: 32px;
     display: flex;
-    justify-content: center;
     position: absolute;
-    left: 32%;
+    left: 0%;
   }
   .view {
     font-size: 11px;
@@ -989,13 +971,13 @@ footer p {
   .cbg-child {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 17px;
+    font-size: 20px;
     row-gap: 15px;
     grid-template-rows: 1fr 3fr;
     justify-items: center;
   }
   .cbg-child-sec {
-    font-size: 15px;
+    font-size: 1rem;
     text-align: left;
     color: gray;
     text-align: center;
@@ -1003,7 +985,7 @@ footer p {
   .first_container {
     position: relative;
     padding: 0px;
-    width: 310px;
+    width: 400px;
     margin: 0 auto;
   }
   .slides img {
@@ -1129,6 +1111,7 @@ footer p {
     margin-left: 40px;
     border: 2px solid #444;
     width: 75%;
+    max-height: 100%;
     height: 100%;
     padding: 20px 0px 0px;
     gap: 10%;
@@ -1148,16 +1131,16 @@ footer p {
   .cbg-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 10px;
-    row-gap: 15px;
+    font-size: 16px;
+    row-gap: 20px;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     margin-bottom: 30px;
   }
-  .container {
+  .first_container {
     position: relative;
     padding: 0px;
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
   }
   .slide img {
