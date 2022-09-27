@@ -288,10 +288,15 @@ a {
   
     .list-item-sec {
         color: #ffffff;
-        margin-left: 52%;
-        font-size: 15px;
-        text-transform: capitalize;
+        margin-left: 50%;
+        font-size: 14px;
+        text-transform: uppercase;
     }
+ 
+    .list-item-sec:hover {
+      transform: scale(1.1)
+  }
+    
 
     .workbox-container {
       margin-bottom: 80px;
@@ -342,7 +347,7 @@ a {
   }
 
   .view-reset {
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
     position: absolute;
     left: 14%;
@@ -354,6 +359,8 @@ a {
     margin-right: 50px;
     text-transform: uppercase;
     color: #fff;
+    background: none;
+    border: none;
   }
 
   .line-2 {
@@ -368,7 +375,12 @@ a {
     font-size: 13px;
     text-transform: uppercase;
     color: gray;
+    background: none;
+    border: none;
+    margin-bottom: 30px;
   }
+
+
 
 .cbg-container {
     display: flex;
@@ -1380,6 +1392,7 @@ body {
       position: absolute;
       left: 20%;
     }
+
 
     .cbg-child {
       display: grid;
